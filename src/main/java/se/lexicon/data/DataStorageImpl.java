@@ -49,12 +49,20 @@ public class DataStorageImpl implements DataStorage {
     @Override
     public Person findOne(Predicate<Person> filter) {
         //todo: implement the method
+        List<Person> result = findMany(filter);
+        if (result.size() > 0) {
+            return result.get(0);
+        }
         return null;
     }
 
     @Override
     public String findOneAndMapToString(Predicate<Person> filter, Function<Person, String> personToString) {
         //todo: implement the method
+        List<Person> result = findMany(filter);
+        if (result.size() > 0) {
+            return personToString.apply(result.get(0));
+        }
         return null;
     }
 

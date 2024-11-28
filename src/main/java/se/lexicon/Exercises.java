@@ -1,6 +1,7 @@
 package se.lexicon;
 
 import se.lexicon.data.DataStorage;
+import se.lexicon.data.DataStorageImpl;
 
 public class Exercises {
 
@@ -13,6 +14,8 @@ public class Exercises {
         System.out.println(message);
         //Write your code here
 
+
+
         System.out.println("----------------------");
     }
 
@@ -21,6 +24,7 @@ public class Exercises {
      */
     public static void exercise2(String message) {
         System.out.println(message);
+
         //Write your code here
 
         System.out.println("----------------------");
